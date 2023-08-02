@@ -1,0 +1,12 @@
+import numpy as np
+# Se agregó una línea entre clases y funciones E(302)
+
+
+def crear_sin(min, max, puntos, amplitud, frecuencia):
+
+    tiempo = np.linspace(min, max, puntos)
+    # Error 1: la identación es un múltiplos de 4(E111)
+    # funcion coseno representada
+    # En el bloque de comentarios hay un espacio despues de # E(114)
+    funcion = amplitud*np.sin(2*np.pi*frecuencia*tiempo)
+    return (tiempo, funcion)
